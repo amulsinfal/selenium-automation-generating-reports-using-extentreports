@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-20T15:00:15 IST" name="Automation Suite (ITestListeners for Reporting test events)" finished-at="2025-07-20T15:00:28 IST" duration-ms="12387">
+  <suite started-at="2025-07-22T16:15:15 IST" name="Automation Suite (ExtentReports for Reporting with ITestListeners)" finished-at="2025-07-22T16:15:30 IST" duration-ms="14300">
     <groups>
       <group name="Regression">
-        <method signature="LoginTest.testLoginWithLockedCredentials()[pri:2, instance:tests.LoginTest@62010f5c]" name="testLoginWithLockedCredentials" class="tests.LoginTest"/>
-        <method signature="LoginTest.testLoginWithInvalidCredentials()[pri:3, instance:tests.LoginTest@62010f5c]" name="testLoginWithInvalidCredentials" class="tests.LoginTest"/>
+        <method signature="LoginTest.testLoginWithLockedCredentials()[pri:2, instance:tests.LoginTest@6cc558c6]" name="testLoginWithLockedCredentials" class="tests.LoginTest"/>
+        <method signature="LoginTest.testLoginWithInvalidCredentials()[pri:3, instance:tests.LoginTest@6cc558c6]" name="testLoginWithInvalidCredentials" class="tests.LoginTest"/>
       </group> <!-- Regression -->
       <group name="Sanity, Regression">
-        <method signature="LoginTest.testLoginWithValidCredentials()[pri:1, instance:tests.LoginTest@62010f5c]" name="testLoginWithValidCredentials" class="tests.LoginTest"/>
-        <method signature="LogoutTest.testLogout()[pri:1, instance:tests.LogoutTest@5f9be66c]" name="testLogout" class="tests.LogoutTest"/>
+        <method signature="LoginTest.testLoginWithValidCredentials()[pri:1, instance:tests.LoginTest@6cc558c6]" name="testLoginWithValidCredentials" class="tests.LoginTest"/>
+        <method signature="LogoutTest.testLogout()[pri:1, instance:tests.LogoutTest@61544ae6]" name="testLogout" class="tests.LogoutTest"/>
       </group> <!-- Sanity, Regression -->
     </groups>
-    <test started-at="2025-07-20T15:00:15 IST" name="Regression Test" finished-at="2025-07-20T15:00:28 IST" duration-ms="12387">
+    <test started-at="2025-07-22T16:15:15 IST" name="Functional Test" finished-at="2025-07-22T16:15:30 IST" duration-ms="14300">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@62010f5c]" started-at="2025-07-20T15:00:15 IST" name="setup" finished-at="2025-07-20T15:00:18 IST" duration-ms="2482" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@6cc558c6]" started-at="2025-07-22T16:15:16 IST" name="setup" finished-at="2025-07-22T16:15:20 IST" duration-ms="3829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLoginWithValidCredentials()[pri:1, instance:tests.LoginTest@62010f5c]" started-at="2025-07-20T15:00:18 IST" name="testLoginWithValidCredentials" description="Test to verify login with valid credentials." finished-at="2025-07-20T15:00:19 IST" duration-ms="694" status="PASS">
+        <test-method signature="testLoginWithValidCredentials()[pri:1, instance:tests.LoginTest@6cc558c6]" started-at="2025-07-22T16:15:20 IST" name="testLoginWithValidCredentials" description="Test to verify login with valid credentials." finished-at="2025-07-22T16:15:20 IST" duration-ms="728" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@62010f5c]" started-at="2025-07-20T15:00:19 IST" name="tearDown" finished-at="2025-07-20T15:00:19 IST" duration-ms="297" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@6cc558c6]" started-at="2025-07-22T16:15:20 IST" name="tearDown" finished-at="2025-07-22T16:15:21 IST" duration-ms="249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@62010f5c]" started-at="2025-07-20T15:00:19 IST" name="setup" finished-at="2025-07-20T15:00:21 IST" duration-ms="1786" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@6cc558c6]" started-at="2025-07-22T16:15:21 IST" name="setup" finished-at="2025-07-22T16:15:22 IST" duration-ms="1914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLoginWithLockedCredentials()[pri:2, instance:tests.LoginTest@62010f5c]" started-at="2025-07-20T15:00:21 IST" name="testLoginWithLockedCredentials" description="Test to verify login with locked credentials." finished-at="2025-07-20T15:00:21 IST" duration-ms="4" status="SKIP">
+        <test-method signature="testLoginWithLockedCredentials()[pri:2, instance:tests.LoginTest@6cc558c6]" started-at="2025-07-22T16:15:22 IST" name="testLoginWithLockedCredentials" description="Test to verify login with locked credentials." finished-at="2025-07-22T16:15:22 IST" duration-ms="6" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[This test is Intentionally skipped for ITestListener test.]]>
@@ -71,15 +71,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithLockedCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@62010f5c]" started-at="2025-07-20T15:00:21 IST" name="tearDown" finished-at="2025-07-20T15:00:21 IST" duration-ms="344" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@6cc558c6]" started-at="2025-07-22T16:15:22 IST" name="tearDown" finished-at="2025-07-22T16:15:23 IST" duration-ms="440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@62010f5c]" started-at="2025-07-20T15:00:21 IST" name="setup" finished-at="2025-07-20T15:00:23 IST" duration-ms="1894" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@6cc558c6]" started-at="2025-07-22T16:15:23 IST" name="setup" finished-at="2025-07-22T16:15:25 IST" duration-ms="1790" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLoginWithInvalidCredentials()[pri:3, instance:tests.LoginTest@62010f5c]" started-at="2025-07-20T15:00:23 IST" name="testLoginWithInvalidCredentials" description="Test to verify login with invalid credentials." finished-at="2025-07-20T15:00:23 IST" duration-ms="506" status="FAIL">
+        <test-method signature="testLoginWithInvalidCredentials()[pri:3, instance:tests.LoginTest@6cc558c6]" started-at="2025-07-22T16:15:25 IST" name="testLoginWithInvalidCredentials" description="Test to verify login with invalid credentials." finished-at="2025-07-22T16:15:25 IST" duration-ms="597" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Error message on the Login Page is incorrect. expected [Username Required] but found [Epic sadface: Username is required]]]>
@@ -91,7 +91,7 @@ at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
-at tests.LoginTest.testLoginWithInvalidCredentials(LoginTest.java:33)
+at tests.LoginTest.testLoginWithInvalidCredentials(LoginTest.java:34)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -124,25 +124,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@62010f5c]" started-at="2025-07-20T15:00:24 IST" name="tearDown" finished-at="2025-07-20T15:00:24 IST" duration-ms="246" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@6cc558c6]" started-at="2025-07-22T16:15:25 IST" name="tearDown" finished-at="2025-07-22T16:15:26 IST" duration-ms="319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginTest -->
       <class name="tests.LogoutTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LogoutTest@5f9be66c]" started-at="2025-07-20T15:00:24 IST" name="setup" finished-at="2025-07-20T15:00:26 IST" duration-ms="2129" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LogoutTest@61544ae6]" started-at="2025-07-22T16:15:26 IST" name="setup" finished-at="2025-07-22T16:15:28 IST" duration-ms="2007" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogout()[pri:1, instance:tests.LogoutTest@5f9be66c]" started-at="2025-07-20T15:00:26 IST" name="testLogout" description="Test to verify logout functionality." finished-at="2025-07-20T15:00:27 IST" duration-ms="1417" status="PASS">
+        <test-method signature="testLogout()[pri:1, instance:tests.LogoutTest@61544ae6]" started-at="2025-07-22T16:15:28 IST" name="testLogout" description="Test to verify logout functionality." finished-at="2025-07-22T16:15:29 IST" duration-ms="1473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LogoutTest@5f9be66c]" started-at="2025-07-20T15:00:27 IST" name="tearDown" finished-at="2025-07-20T15:00:28 IST" duration-ms="263" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LogoutTest@61544ae6]" started-at="2025-07-22T16:15:29 IST" name="tearDown" finished-at="2025-07-22T16:15:30 IST" duration-ms="231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LogoutTest -->
-    </test> <!-- Regression Test -->
-  </suite> <!-- Automation Suite (ITestListeners for Reporting test events) -->
+    </test> <!-- Functional Test -->
+  </suite> <!-- Automation Suite (ExtentReports for Reporting with ITestListeners) -->
 </testng-results>
