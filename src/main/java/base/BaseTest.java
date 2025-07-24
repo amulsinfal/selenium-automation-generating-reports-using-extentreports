@@ -14,7 +14,7 @@ public class BaseTest {
 	protected WebDriver driver;
 	private static final Logger log = LogManager.getLogger(BaseTest.class);
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setup() {
 		String browser = ConfigReader.getValue("QA", "browser");
 		String url = ConfigReader.getValue("QA", "url");
@@ -23,7 +23,7 @@ public class BaseTest {
 		driver.get(url);
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		driver.quit();
 	}

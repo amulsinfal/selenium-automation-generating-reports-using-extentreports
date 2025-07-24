@@ -51,7 +51,8 @@ public class LoginPage {
 				ReportListeners.test.log(Status.INFO, "Login page displayed.");
 			} else {
 				log.warn("Login button not visible, Login page might not be displayed.");
-				ReportListeners.test.log(Status.WARNING,"Login button not visible, Login page might not be displayed.");
+				ReportListeners.test.log(Status.WARNING,
+						"Login button not visible, Login page might not be displayed.");
 			}
 			return isVisible;
 		} catch (Exception e) {
@@ -75,7 +76,8 @@ public class LoginPage {
 			}
 		} catch (Exception e) {
 			log.error("Unable to get error message from Login page. Exception occurred: ", e);
-			ReportListeners.test.log(Status.FAIL,"Unable to get error message from Login page. Exception occured: " + e.getMessage());
+			ReportListeners.test.log(Status.FAIL,
+					"Unable to get error message from Login page. Exception occured: " + e.getMessage());
 			return "";
 		}
 	}

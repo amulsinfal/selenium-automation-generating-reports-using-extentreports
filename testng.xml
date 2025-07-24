@@ -5,6 +5,12 @@
 		<listener class-name="listeners.ReportListeners" />
 	</listeners>
 	<test name="Functional Test">
+		<groups>
+			<run>
+				<include name="Sanity"></include>
+				<include name="Regression"></include>
+			</run>
+		</groups>
 		<classes>
 			<class name="tests.LoginTest" />
 			<class name="tests.LogoutTest" />
