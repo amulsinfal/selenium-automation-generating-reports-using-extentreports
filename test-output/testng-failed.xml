@@ -5,13 +5,19 @@
     <listener class-name="listeners.ReportListeners"/>
   </listeners>
   <test thread-count="5" name="Functional Test(failed)">
+    <groups>
+      <run>
+        <include name="Sanity"/>
+        <include name="Regression"/>
+      </run>
+    </groups>
     <classes>
       <class name="tests.LoginTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="testLoginWithLockedCredentials"/>
-          <include name="testLoginWithInvalidCredentials"/>
+          <include name="testLoginWithBlankCredentials"/>
         </methods>
       </class> <!-- tests.LoginTest -->
     </classes>

@@ -26,7 +26,8 @@ public class ReportListeners implements ITestListener {
 	public void onTestStart(ITestResult result) {
 		log.info("Test case '" + result.getMethod().getMethodName() + "' execution started.");
 		log.info("Test description - '" + result.getMethod().getDescription() + "'.");
-		test = report.createTest(result.getTestClass().getRealClass().getName() + " :: " + result.getMethod().getMethodName());
+		test = report.createTest(
+				result.getTestClass().getRealClass().getName() + " :: " + result.getMethod().getMethodName());
 		test.log(Status.INFO, "Navigated to url: '" + ConfigReader.getValue("QA", "url") + "'.");
 		test.log(Status.INFO, "'" + ConfigReader.getValue("QA", "browser") + "' Browser launched.");
 		test.log(Status.INFO, "Test case '" + result.getMethod().getMethodName() + "' execution started.");
@@ -36,7 +37,8 @@ public class ReportListeners implements ITestListener {
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		log.info("Test case '" + result.getMethod().getMethodName() + "' execution Passed.");
-		Markup markup = MarkupHelper.createLabel("Test case '" + result.getMethod().getMethodName() + "' execution passed.", ExtentColor.GREEN);
+		Markup markup = MarkupHelper.createLabel(
+				"Test case '" + result.getMethod().getMethodName() + "' execution passed.", ExtentColor.GREEN);
 		test.log(Status.PASS, markup);
 		test.log(Status.INFO, "'" + ConfigReader.getValue("QA", "browser") + "' browser quit successfully.");
 	}
@@ -46,12 +48,13 @@ public class ReportListeners implements ITestListener {
 		log.info("Test case '" + result.getMethod().getMethodName() + "' execution failed.");
 		log.info("Exception occured: " + result.getThrowable());
 		String screenshotPath = ScreenshotUtil.captureScreenshot(result.getMethod().getMethodName());
-	    log.info("Screenshot saved at: " + screenshotPath);
-		Markup markup = MarkupHelper.createLabel("Test case '" + result.getMethod().getMethodName() + "' execution failed.", ExtentColor.RED);
+		log.info("Screenshot saved at: " + screenshotPath);
+		Markup markup = MarkupHelper.createLabel(
+				"Test case '" + result.getMethod().getMethodName() + "' execution failed.", ExtentColor.RED);
 		test.log(Status.FAIL, markup);
 		test.log(Status.INFO, result.getThrowable());
-        test.addScreenCaptureFromPath(screenshotPath);
-        test.log(Status.INFO, "Screenshot saved at: " + screenshotPath);
+		test.addScreenCaptureFromPath(screenshotPath);
+		test.log(Status.INFO, "Screenshot saved at: " + screenshotPath);
 		test.log(Status.INFO, "'" + ConfigReader.getValue("QA", "browser") + "' browser quit successfully.");
 	}
 
@@ -59,7 +62,8 @@ public class ReportListeners implements ITestListener {
 	public void onTestSkipped(ITestResult result) {
 		log.info("Test case '" + result.getMethod().getMethodName() + "' execution skipped.");
 		log.info("Exception occured: " + result.getThrowable());
-		Markup markup = MarkupHelper.createLabel("Test case '" + result.getMethod().getMethodName() + "' execution skipped.", ExtentColor.ORANGE);
+		Markup markup = MarkupHelper.createLabel(
+				"Test case '" + result.getMethod().getMethodName() + "' execution skipped.", ExtentColor.ORANGE);
 		test.log(Status.SKIP, markup);
 		test.log(Status.INFO, result.getThrowable());
 		test.log(Status.INFO, "'" + ConfigReader.getValue("QA", "browser") + "' browser quit successfully.");

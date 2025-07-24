@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,  1 skipped,  2 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,  1 skipped,  3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_" title="tests.LoginTest" class="method navigator-link" hash-for-method="testLoginWithInvalidCredentials">testLoginWithInvalidCredentials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_" title="tests.LoginTest" class="method navigator-link" hash-for-method="testLoginWithBlankCredentials">testLoginWithBlankCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_ -->
@@ -129,6 +129,11 @@
                       <a href="#" panel-name="suite-Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_" class="show-methods passed suite-Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_"> (show)</a> <!-- show-methods passed suite-Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_ -->
                     </span>
                     <div class="method-list-content passed suite-Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_" title="tests.LoginTest" class="method navigator-link" hash-for-method="testLoginWithInvalidCredentials">testLoginWithInvalidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_" title="tests.LoginTest" class="method navigator-link" hash-for-method="testLoginWithValidCredentials">testLoginWithValidCredentials</a> <!-- method navigator-link -->
@@ -159,16 +164,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLoginWithInvalidCredentials">
-                  </a> <!-- testLoginWithInvalidCredentials -->
-                  <span class="method-name">testLoginWithInvalidCredentials</span>
+                  <a name="testLoginWithBlankCredentials">
+                  </a> <!-- testLoginWithBlankCredentials -->
+                  <span class="method-name">testLoginWithBlankCredentials</span>
                   <div class="stack-trace">java.lang.AssertionError: Error message on the Login Page is incorrect. expected [Username Required] but found [Epic sadface: Username is required]
-	at tests.LoginTest.testLoginWithInvalidCredentials(LoginTest.java:34)
+	at tests.LoginTest.testLoginWithBlankCredentials(LoginTest.java:41)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 30 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Test to verify login with invalid credentials.)                  </em>
+(Test to verify login with blank credentials.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -198,23 +203,6 @@
           <div class="suite-Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLoginWithValidCredentials">
-                  </a> <!-- testLoginWithValidCredentials -->
-                  <span class="method-name">testLoginWithValidCredentials</span>
-                  <em>
-(Test to verify login with valid credentials.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_-class-passed -->
-          <div class="suite-Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">tests.LogoutTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -225,6 +213,32 @@
                   <span class="method-name">testLogout</span>
                   <em>
 (Test to verify logout functionality.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_-class-passed -->
+          <div class="suite-Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithInvalidCredentials">
+                  </a> <!-- testLoginWithInvalidCredentials -->
+                  <span class="method-name">testLoginWithInvalidCredentials</span>
+                  <em>
+(Test to verify login with invalid credentials.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithValidCredentials">
+                  </a> <!-- testLoginWithValidCredentials -->
+                  <span class="method-name">testLoginWithValidCredentials</span>
+                  <em>
+(Test to verify login with valid credentials.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -243,6 +257,12 @@
     &lt;listener class-name=&quot;listeners.ReportListeners&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Functional Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;Sanity&quot;/&gt;
+        &lt;include name=&quot;Regression&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.LoginTest&quot;/&gt;
       &lt;class name=&quot;tests.LogoutTest&quot;/&gt;
@@ -273,6 +293,10 @@
               <span class="test-group-name">Regression</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">testLoginWithBlankCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">testLoginWithInvalidCredentials</span>
                 <br/>
               </div> <!-- method-in-group -->
@@ -282,7 +306,7 @@
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
-              <span class="test-group-name">Sanity, Regression</span>
+              <span class="test-group-name">Sanity</span>
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">testLoginWithValidCredentials</span>
@@ -309,28 +333,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testLogout')
 data.setCell(0, 2, 'tests.LogoutTest')
-data.setCell(0, 3, 1439);
+data.setCell(0, 3, 1527);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testLoginWithInvalidCredentials')
+data.setCell(1, 1, 'testLoginWithValidCredentials')
 data.setCell(1, 2, 'tests.LoginTest')
-data.setCell(1, 3, 638);
+data.setCell(1, 3, 806);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testLoginWithValidCredentials')
+data.setCell(2, 1, 'testLoginWithInvalidCredentials')
 data.setCell(2, 2, 'tests.LoginTest')
-data.setCell(2, 3, 615);
+data.setCell(2, 3, 569);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testLoginWithLockedCredentials')
+data.setCell(3, 1, 'testLoginWithBlankCredentials')
 data.setCell(3, 2, 'tests.LoginTest')
-data.setCell(3, 3, 5);
+data.setCell(3, 3, 531);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testLoginWithLockedCredentials')
+data.setCell(4, 2, 'tests.LoginTest')
+data.setCell(4, 3, 8);
 window.suiteTableData['Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_']= { tableData: data, tableDiv: 'times-div-Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_">
               </div> <!-- times-div-Automation_Suite__ExtentReports_for_Reporting_with_ITestListeners_ -->
             </div> <!-- times-div -->
@@ -363,52 +391,64 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginWithValidCredentials</span>
-                <span class="method-start">2450 ms</span>
+                <span class="method-start">2579 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3086 ms</span>
+                <span class="method-start">3400 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">3322 ms</span>
+                <span class="method-start">3746 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginWithLockedCredentials</span>
-                <span class="method-start">5058 ms</span>
+                <span class="method-start">5708 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">5088 ms</span>
+                <span class="method-start">5733 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">5610 ms</span>
+                <span class="method-start">6116 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testLoginWithInvalidCredentials</span>
-                <span class="method-start">7508 ms</span>
+                <span class="method-name">testLoginWithBlankCredentials</span>
+                <span class="method-start">7786 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8331 ms</span>
+                <span class="method-start">8530 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8922 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithInvalidCredentials</span>
+                <span class="method-start">10754 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11327 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LogoutTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">8602 ms</span>
+                <span class="method-start">11666 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLogout</span>
-                <span class="method-start">10379 ms</span>
+                <span class="method-start">13485 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11821 ms</span>
+                <span class="method-start">15016 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
